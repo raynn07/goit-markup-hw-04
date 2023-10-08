@@ -87,7 +87,7 @@
 
 }
 
-.main-header div span{
+.main-header a div span{
     color: var(--selected);
 }
 
@@ -102,16 +102,19 @@
 
 }
 
-.main-navigation-address div:hover{
-    stroke: var(--selected);
+.main-header-email:hover svg,
+.main-header-phone:hover svg{
+    fill: var(--selected);
+    color: var(--selected);
 }
+
 
 .main-header .main-navigation a:hover,
-.main-header .main-navigation a:focus{
+.main-header .main-navigation a:focus,
+.main-header-email:hover svg{
     color: var(--selected);
-    fill: var(--selected);
+    fill :var(--selected);
 }
-
 /* END HEADER */
 
 /* MAIN */
@@ -140,6 +143,10 @@ ul{
     background-color: var(--selected);
     color: var(--white-text) ;
     border-color: var(--selected);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.08);
+    box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+
 }
 
 .buttons-main{
@@ -311,10 +318,11 @@ h3{
     padding: 12px;
 }
 
-.photo-cards-socials div:hover,
-.photo-cards-socials svg:hover{
-    background-color: var(--selected);
+
+.photo-cards-socials-hover:hover svg,
+.photo-cards-socials div:hover{
     fill: white;
+    background-color: var(--selected);
 }
 
 .photo-cards-socials svg{
@@ -332,6 +340,12 @@ h3{
 
 .photo-cards-port li{
     border: 1px solid rgba(238, 238, 238, 1);
+}
+
+.photo-cards-port li:hover{
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.06);
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 
 .photo-cards-port p{
